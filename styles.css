@@ -5,6 +5,10 @@
   font-family: "Oswald", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   margin: 3rem auto;
 }
@@ -16,4 +20,32 @@
   border-radius: 0.25rem;
   background: rgba(88, 132, 68);
   color: #fff;
+  padding: 1rem;
+}
+
+.top-screen {
+  display: flex;
+  align-items: center;
+}
+
+.clear {
+  width: 25%;
+  padding: 1rem;
+}
+
+.screen {
+  width: 75%;
+  padding: 1rem;
+}
+
+.row ul li {
+  display: inline-block;
+}
+
+.btn {
+  padding: 1rem;
+  margin: 1rem auto;
+  border: solid 1px #fff;
+  width: 25%;
+  display: block;
 }
