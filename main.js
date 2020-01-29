@@ -2,6 +2,7 @@
 const buttons = document.querySelectorAll(".btn");
 let screen = document.querySelector(".screen");
 let clear = document.querySelector(".clear");
+let equal = document.querySelector("#equal");
 for (const button of buttons) {
   button.addEventListener("click", function() {
     let value = this.innerHTML;
@@ -12,3 +13,5 @@ for (const button of buttons) {
 clear.addEventListener("click", function() {
   screen.innerHTML = " ";
 });
+
+equal.addEventListener("click", function() {});
