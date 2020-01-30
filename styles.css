@@ -45,6 +45,8 @@ ul {
   display: flex;
   align-items: center;
   border-radius: 0.25rem;
+  background: #484848;
+  color: #fff;
 }
 
 .row ul li {

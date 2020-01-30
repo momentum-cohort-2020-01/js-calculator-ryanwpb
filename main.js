@@ -4,24 +4,21 @@ let screen = document.querySelector(".screen");
 let clear = document.querySelector(".clear");
 let equal = document.querySelector("#equal");
 
-// let evaluation = currentCalc.innerText;
-// let answer = eval(evaluation);
-// currentCalc.innerHTML=answer;
-
 for (const button of buttons) {
   button.addEventListener("click", function() {
     let value = this.innerHTML;
-    screen.innerText += value + " ";
+    screen.innerHTML += value + " ";
   });
 }
 
+//Here we clear the screen innerText
 clear.addEventListener("click", function() {
-  screen.innerText = " ";
+  screen.innerHTML = " ";
 });
 
+//Finally we evaluate the answer
 equal.addEventListener("click", function(val) {
   let result = screen.innerText;
   let answer = eval(result);
-  console.log(answer);
   screen.innerText = answer;
 });
