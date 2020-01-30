@@ -70,6 +70,14 @@ ul {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
   border-radius: 0.25rem;
   border: solid 2px #fff;
+  transition: all 0.3s;
+}
+
+.clear:hover,
+.number:hover {
+  background: #ccc;
+  border: solid 2px #ccc;
+  color: #fff;
 }
 
 #equal {
@@ -92,4 +100,11 @@ btn:active {
   background: #ff5a5f;
   color: #fff;
   border: solid 2px #ff5a5f;
+  transition: all 0.3s;
+}
+
+.factor:hover,
+#equal:hover {
+  background: #c12227;
+  border: solid 2px #c12227;
 }
