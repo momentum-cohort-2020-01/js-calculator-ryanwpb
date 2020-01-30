@@ -20,5 +20,5 @@ clear.addEventListener("click", function() {
 equal.addEventListener("click", function() {
   let result = screen.innerText;
   let answer = eval(result);
-  screen.innerText = answer.toFixed(1);
+  screen.innerText = answer;
 });
