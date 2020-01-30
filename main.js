@@ -7,7 +7,7 @@ let equal = document.querySelector("#equal");
 for (const button of buttons) {
   button.addEventListener("click", function() {
     let value = this.innerHTML;
-    screen.innerHTML += value + "";
+    screen.innerHTML += value;
   });
 }
 
@@ -17,7 +17,7 @@ clear.addEventListener("click", function() {
 });
 
 //Finally we evaluate the answer
-equal.addEventListener("click", function(val) {
+equal.addEventListener("click", function() {
   let result = screen.innerText;
   let answer = eval(result);
   screen.innerText = answer.toFixed(1);
